@@ -468,6 +468,10 @@ footer-social {
   background-position: center;
   border-radius: 100px;
 }
+.social-network:hover,
+.social-network:focus {
+  background-color: var(--accent-color);
+}
 .footer-social-list .instagram {
   background-image: url(../img/social-media/white-social-media/instagram.svg);
 }
