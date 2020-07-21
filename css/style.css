@@ -67,6 +67,7 @@ ul {
 .header {
   border-bottom: 1px solid #ececec;
 }
+
 .top-nav {
   display: flex;
   align-items: center;
@@ -91,6 +92,15 @@ ul {
   color: var(--accent-color);
   text-decoration: none;
 }
+/* .current::after {
+  display: block;
+  content: "";
+  width: 47px;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  margin-top: 28px;
+} */
 .site-nav .item + .item {
   margin-left: 50px;
 }
@@ -130,6 +140,20 @@ ul {
   padding-bottom: 200px;
   text-align: center;
 }
+.hero-img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  background-image: linear-gradient(
+    to bottom rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8),
+    url("../img/header-img.jpg")
+  );
+  background-color: #2f303a;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -139,7 +163,6 @@ ul {
   margin-right: auto;
 
   color: var(--background-color);
-  background-color: #2f303a;
 
   font-family: var(--main-font);
   font-weight: 900;
@@ -424,12 +447,8 @@ ul {
 footer-social {
   justify-content: center;
   align-items: center;
-
-  cursor: pointer;
 }
-.social-network {
-  display: block;
-}
+.social-network,
 .footer-sent {
   display: block;
 }
@@ -438,7 +457,70 @@ footer-social {
 }
 .social-network {
   text-decoration: none;
+  width: 44px;
+  height: 44px;
+  margin-right: 0;
+  margin-left: 0;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100px;
 }
+.footer-social-list .instagram {
+  background-image: url(../img/social-media/white-social-media/instagram.svg);
+}
+.footer-social-list .twitter {
+  background-image: url(../img/social-media/white-social-media/twitter.svg);
+}
+.footer-social-list .facebook {
+  background-image: url(../img/social-media/white-social-media/facebook.svg);
+}
+.footer-social-list .linkedin {
+  background-image: url(../img/social-media/white-social-media/linkedin.svg);
+}
+.footer-button {
+  display: inline-flex;
+  width: 200px;
+  height: 50px;
+  min-width: 50px;
+
+  border-radius: 4px;
+  padding: 13px 0px 13px 29px;
+
+  align-items: center;
+  text-align: center;
+
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
+
+  font-family: var(--main-font);
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+
+  color: #ffffff;
+  cursor: pointer;
+}
+.footer-button:focus {
+  background-color: var(--accent-color);
+}
+.footer-button::after {
+  display: inline-block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/social-media/white-social-media/telegram.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
 /* Portfolio */
 /* Portfolio filter */
 .section .button {
