@@ -360,19 +360,29 @@ ul {
 .team-sm-list:not(:last-child) {
   margin-right: 10px;
 }
-.team-sm-list > a {
-  display: block;
+.team-sm-list a {
+  display: inline-flex;
 }
 .team-sm-list {
   padding: 0;
   border: none;
   width: 44px;
   height: 44px;
+  background-color: var(--background-color);
+}
+.team-sm-list:hover,
+.team-sm-list:focus {
+  border-radius: 100px;
+  background-color: #2196f3;
 }
 .team-social-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+}
+.team-sm-list:hover .team-social-icon,
+.team-sm-list:focus .team-social-icon {
+  fill: var(--background-color);
 }
 /* Our Clients */
 .clients {
@@ -403,6 +413,9 @@ ul {
 
 .our-clients .clients-list + .clients-list {
   margin-left: 30px;
+}
+.company-logo {
+  width: ;
 }
 /* Footer */
 .footer {
