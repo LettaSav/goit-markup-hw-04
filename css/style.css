@@ -362,9 +362,9 @@ ul {
 }
 .team-sm-list a {
   display: inline-flex;
+  align-items: center;
 }
 .team-sm-list {
-  padding: 0;
   border: none;
   width: 44px;
   height: 44px;
@@ -379,7 +379,10 @@ ul {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  position: relative;
+  top: 12px;
 }
+
 .team-sm-list:hover .team-social-icon,
 .team-sm-list:focus .team-social-icon {
   fill: var(--background-color);
@@ -393,19 +396,23 @@ ul {
 .clients > .container {
   width: 1187px;
 }
-.our-clients li {
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
+
+.clients-list :hover,
+.clients-list :focus {
+  border-color: var(--accent-color);
 }
-.clients-list a :hover,
-.clients-list a :focus {
-  color: var(--accent-color);
+.clients-list :hover .company-logo,
+.clients-list :focus .company-logo {
+  fill: var(--accent-color);
 }
-.clients-list a {
+.clients-list-item {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
 
   width: 170px;
   height: 90px;
@@ -415,8 +422,9 @@ ul {
   margin-left: 30px;
 }
 .company-logo {
-  width: ;
+  fill: #afb1b8;
 }
+
 /* Footer */
 .footer {
   padding-top: 60px;
