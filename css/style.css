@@ -368,8 +368,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  padding: 0 36px 44px 34px;
+  padding-bottom: 24px;
 }
 .team-sm-list:not(:last-child) {
   margin-right: 10px;
@@ -445,10 +444,12 @@ ul {
   padding-bottom: 60px;
   background-color: var(--fotter-color);
 }
-
+.footer-logo {
+  margin-right: 150px;
+}
 .left-side-logo {
   display: block;
-  margin-right: 150px;
+
   margin-left: 0;
   margin-bottom: 20px;
 }
@@ -475,8 +476,14 @@ ul {
   line-height: 1.7;
   text-decoration: none;
 }
+.phone-address {
+  margin-bottom: 0;
+}
 .addresscolor {
   color: rgba(255, 255, 255, 0.6);
+}
+.fotter-join-us {
+  margin-right: 155px;
 }
 
 .footer-sent {
@@ -484,7 +491,6 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin-right: 155px;
 }
 .join-us {
   margin-bottom: 20px;
