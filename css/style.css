@@ -652,7 +652,6 @@ footer-social {
   width: 370px;
   height: 404px;
 
-  box-sizing: border-box;
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
@@ -664,9 +663,6 @@ footer-social {
 }
 .works {
   text-decoration: none;
-}
-.portfolio-works {
-  overflow: hidden;
 }
 
 .portfolio-title {
