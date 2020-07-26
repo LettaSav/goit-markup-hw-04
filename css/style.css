@@ -11,6 +11,11 @@
 html {
   box-sizing: border-box;
 }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
   color: var(--primary-text-color);
   background-color: var(--background-color);
@@ -34,7 +39,7 @@ ul {
   display: block;
 }
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
@@ -634,10 +639,6 @@ footer-social {
 .portfolio-section-style {
   padding-top: 94px;
   padding-bottom: 94px;
-
-  width: 1170px;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -665,7 +666,7 @@ footer-social {
   text-decoration: none;
 }
 .portfolio-works {
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .portfolio-title {
