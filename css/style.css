@@ -666,7 +666,7 @@ footer-social {
   text-decoration: none;
 }
 .portfolio-works {
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .portfolio-title {
